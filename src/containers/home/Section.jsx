@@ -146,7 +146,7 @@ const Section = () => {
 
             {/* FAQS SECTION */}
             <Box py={{ base: 20, sm: 16, lg: 12 }} bgColor={"black"}>
-                <Container maxW={"container.md"} textAlign={{ base: "center", md: "center", lg: "left" }}>
+                <Container maxW={"container.md"} w={"90%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
                     <Heading fontSize={"5xl"} color={"white"} textAlign={"center"} fontWeight={"semibold"}>Frequently Asked Questions</Heading>
 
                     <Accordion allowToggle mt={12}>

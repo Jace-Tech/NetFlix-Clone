@@ -16,15 +16,10 @@ html {
 
 @media screen and (max-width: 425px) {
   html {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-}
 
 body {
   margin: 0;

@@ -1,18 +1,13 @@
 import { Box, Container, Link, List, ListItem, SimpleGrid, Text } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { Link as ReactLink } from "react-router-dom"
+import { homeData } from '../../data/home'
 
 
 
 const Footer = ({ style, halfLink }) => {
-    const [footerLinks, setFooterLinks] = useState(null)
+    const [footerLinks, setFooterLinks] = useState(homeData.footer.links)
     const [country, setCountry] = useState(null)
-
-    const handleGetFooterLinks = async () => {
-        const response = await fetch('/src/data/home.json')
-        const data = await response.json()
-        setFooterLinks(data.footer.links)
-    }
 
     // GET USER'S IP ADDRESS
     const handleFetchIpAddress = async () => {
@@ -32,7 +27,6 @@ const Footer = ({ style, halfLink }) => {
     }
 
     useEffect(() => {
-        handleGetFooterLinks()
         handleFetchIpAddress()
     }, [])
 
@@ -65,7 +59,7 @@ const Footer = ({ style, halfLink }) => {
                         <SimpleGrid columns={[1, 2, 3, 4]} spacing={8} mt={5}>
                             {
                                 footerLinks && footerLinks.map((links, index) => (
-                                    <div data-aos={"fade-up"} data-aos-duration={"1000"} data-aos-delay={`${index * 100}`} key={index}>
+                                    <div data-aos={"fade-up"} data-aos-duration={"2000"} data-aos-delay={`${index * 100}`} key={index}>
                                         <List spacing={3} >
                                             {links.map(({ external, to, name }, _index) => (
                                                 <ListItem fontSize={"sm"} fontWeight={"light"} color={"whiteAlpha.500"} key={`${index}-${_index}`}>

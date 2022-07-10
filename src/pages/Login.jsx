@@ -17,7 +17,7 @@ const Login = () => {
         >
             <Seo title={"Netflix - Login"} />
             <Header noSignIn />
-            <div data-aos={"fade-up"} data-aos-delay={"50"}>
+            <div data-aos={"fade-up"} data-aos-duration={"1500"} data-aos-delay={"50"}>
                 <LoginForm />
             </div>
             <Box mt={{ base: 10, md: 16, lg: 20 }}>

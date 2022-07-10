@@ -12,6 +12,7 @@ import boxshot from "../../assets/boxshot.png"
 import kids from "../../assets/img-1.png"
 
 import MemberShip from '../../components/MemberShip'
+import { homeData } from '../../data/home'
 
 
 
@@ -42,7 +43,7 @@ const FAQItem = ({ question, answer }) => {
 
 
 const Section = () => {
-    const [FAQs, setFAQs] = useState(null)
+    const [FAQs, setFAQs] = useState(homeData.landing.faq)
 
     const handleGetFAQs = async () => {
         const request = await fetch('/src/data/home.json')

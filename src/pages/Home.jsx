@@ -9,7 +9,7 @@ import Section from '../containers/home/Section'
 const Home = () => {
     return (
         <Box overflowX={"hidden"}>
-            <Seo title="Home" />
+            <Seo title={"Netflix - Home"} />
             <HomeHeader />
             <Section />
             <Footer />

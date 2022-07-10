@@ -58,7 +58,7 @@ const Section = () => {
         <>
             {/* ENJOY SECTION */}
             <Box py={{ base: 20, sm: 16, lg: 12 }} bgColor={"black"}>
-                <Container maxW={"container.xl"} w={"90%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
+                <Container maxW={"container.xl"} w={"95%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
                     <Flex flexDir={{ base: "column", md: "column", lg: "row" }} alignItems={"center"} spacing={8}>
                         <Box color={"white"} w={{ base: "100%", md: "100%", lg: "45%" }}>
                             <div data-aos={"fade-right"} data-aos-duration={"2000"} data-aos-delay={"50"}>
@@ -85,7 +85,7 @@ const Section = () => {
 
             {/* DOWNLOAD SECTION */}
             <Box py={{ base: 20, sm: 16, lg: 12 }} bgColor={"black"}>
-                <Container maxW={"container.xl"} w={"90%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
+                <Container maxW={"container.xl"} w={"95%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
                     <Flex flexDir={{ base: "column-reverse", md: "column-reverse", lg: "row-reverse" }} alignItems={"center"} spacing={8}>
                         <Box color={"white"} w={{ base: "100%", md: "100%", lg: "45%" }}>
                             <div data-aos={"fade-left"} data-aos-duration={"2000"} data-aos-delay={"50"}>
@@ -119,7 +119,7 @@ const Section = () => {
 
             {/* WATCH SECTION */}
             <Box py={{ base: 20, sm: 16, lg: 12 }} bgColor={"black"}>
-                <Container maxW={"container.xl"} w={"90%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
+                <Container maxW={"container.xl"} w={"95%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
                     <Flex flexDir={{ base: "column", md: "column", lg: "row" }} alignItems={"center"} spacing={8}>
                         <Box color={"white"} w={{ base: "100%", md: "100%", lg: "45%" }}>
                             <div data-aos={"fade-up"} data-aos-duration={"3000"} data-aos-delay={"100"}>
@@ -135,7 +135,7 @@ const Section = () => {
 
             {/* KIDS SECTION */}
             <Box py={{ base: 20, sm: 16, lg: 12 }} bgColor={"black"}>
-                <Container maxW={"container.xl"} w={"90%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
+                <Container maxW={"container.xl"} w={"95%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
                     <Flex flexDir={{ base: "column", md: "column", lg: "row" }} alignItems={"center"} spacing={8}>
                         <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
                             <Box pos={"relative"} w={"fit-content"} maxW={{ base: "fit-content", md: "", lg: 504 }} h={"fit-content"}>
@@ -160,7 +160,7 @@ const Section = () => {
 
             {/* FAQS SECTION */}
             <Box py={{ base: 20, sm: 16, lg: 12 }} bgColor={"black"}>
-                <Container maxW={"container.md"} w={"90%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
+                <Container maxW={"container.md"} w={"95%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
                     <div data-aos={"fade"} data-aos-duration={"2000"} data-aos-delay={"50"}>
                         <Heading fontSize={"5xl"} color={"white"} textAlign={"center"} fontWeight={"semibold"}>Frequently Asked Questions</Heading>
                     </div>

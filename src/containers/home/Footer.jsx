@@ -39,7 +39,7 @@ const Footer = ({ style, halfLink }) => {
     return (
         <Box py={{ base: 20, sm: 16, lg: 12 }} bgColor={"black"} {...style}>
             <Container maxW={"container.xl"} w={"95%"}>
-                <div data-aos={"fade-in"} data-aos-delay={"50"}>
+                <div data-aos={"fade-up"}>
                     <Link fontSize={"md"} color={"whiteAlpha.500"}>Questions? Contact us.</Link>
                 </div>
 

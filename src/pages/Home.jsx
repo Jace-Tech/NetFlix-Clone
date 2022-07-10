@@ -12,7 +12,7 @@ const Home = () => {
             <Seo title={"Netflix - Home"} />
             <HomeHeader />
             <Section />
-            <Footer />
+            <Footer halfLink={false} />
         </Box>
     )
 }

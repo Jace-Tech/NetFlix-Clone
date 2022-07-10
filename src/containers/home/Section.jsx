@@ -89,7 +89,7 @@ const Section = () => {
                 <Container maxW={"container.xl"} w={"95%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
                     <Flex flexDir={{ base: "column-reverse", md: "column-reverse", lg: "row-reverse" }} alignItems={"center"} spacing={8}>
                         <Box color={"white"} w={{ base: "100%", md: "100%", lg: "45%" }}>
-                            <div data-aos={"fade-left"} data-aos-delay={"50"}>
+                            <div data-aos={"fade-left"}>
                                 <Heading fontSize={"5xl"} fontWeight={"semibold"}>Download your shows to watch offline.</Heading>
                                 <Text mt={4} fontSize={"2xl"}>Save your favorites easily and always have something to watch.</Text>
                             </div>
@@ -98,7 +98,7 @@ const Section = () => {
                         <Spacer />
 
                         <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
-                            <div data-aos={"fade-right"} data-aos-delay={"100"}>
+                            <div data-aos={"fade-right"} data-aos-delay={"50"}>
                                 <Box pos={"relative"} w={"fit-content"} maxW={{ base: "fit-content", md: "", lg: 504 }} h={"fit-content"}>
                                     <HStack gap={3} bgColor={"black"} minW={{ base: "90%", md: "80%", lg: "70%" }} borderRadius={"xl"} zIndex={2} p={3} pos={"absolute"} border={`2px solid`} borderColor={"whiteAlpha.400"} left={"50%"} transform={"translateX(-50%)"} bottom={"6%"}>
                                         <Image src={boxshot} w={"12"} objectFit={"contain"} />
@@ -123,7 +123,7 @@ const Section = () => {
                 <Container maxW={"container.xl"} w={"95%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
                     <Flex flexDir={{ base: "column", md: "column", lg: "row" }} alignItems={"center"} spacing={8}>
                         <Box color={"white"} w={{ base: "100%", md: "100%", lg: "45%" }}>
-                            <div data-aos={"fade-up"} data-aos-delay={"100"}>
+                            <div data-aos={"fade-up"}>
                                 <Heading fontSize={"5xl"} fontWeight={"semibold"}>Watch everywhere.</Heading>
                                 <Text mt={4} fontSize={"2xl"}>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</Text>
                             </div>
@@ -140,7 +140,7 @@ const Section = () => {
                     <Flex flexDir={{ base: "column", md: "column", lg: "row" }} alignItems={"center"} spacing={8}>
                         <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
                             <Box pos={"relative"} w={"fit-content"} maxW={{ base: "fit-content", md: "", lg: 504 }} h={"fit-content"}>
-                                <div data-aos={"fade-right"} data-aos-delay={"50"}>
+                                <div data-aos={"fade-right"}>
                                     <Image src={kids} />
                                 </div>
                             </Box>
@@ -149,7 +149,7 @@ const Section = () => {
                         <Spacer />
 
                         <Box color={"white"} w={{ base: "100%", md: "100%", lg: "45%" }}>
-                            <div data-aos={"fade-left"} data-aos-delay={"100"}>
+                            <div data-aos={"fade-left"} data-aos-delay={"50"}>
                                 <Heading fontSize={"5xl"} fontWeight={"semibold"}>Create profiles for kids.</Heading>
                                 <Text mt={4} fontSize={"2xl"}>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</Text>
                             </div>
@@ -162,7 +162,7 @@ const Section = () => {
             {/* FAQS SECTION */}
             <Box py={{ base: 20, sm: 16, lg: 12 }} bgColor={"black"}>
                 <Container maxW={"container.md"} w={"95%"} textAlign={{ base: "center", md: "center", lg: "left" }}>
-                    <div data-aos={"fade"} data-aos-delay={"50"}>
+                    <div data-aos={"fade"}>
                         <Heading fontSize={"5xl"} color={"white"} textAlign={"center"} fontWeight={"semibold"}>Frequently Asked Questions</Heading>
                     </div>
 
@@ -175,7 +175,7 @@ const Section = () => {
                     </Accordion>
 
                     <Box my={12} color={"white"} textAlign={"center"}>
-                        <div data-aos={"fade-up"} data-aos-delay={"100"}>
+                        <div data-aos={"fade-up"}>
                             <MemberShip />
                         </div>
                     </Box>

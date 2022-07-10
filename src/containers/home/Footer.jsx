@@ -59,7 +59,7 @@ const Footer = ({ style, halfLink }) => {
                         <SimpleGrid columns={[1, 2, 3, 4]} spacing={8} mt={5}>
                             {
                                 footerLinks && footerLinks.map((links, index) => (
-                                    <div data-aos={"fade-up"} data-aos-duration={"2000"} data-aos-delay={`${index * 100}`} key={index}>
+                                    <div data-aos={"fade-up"} data-aos-duration={"1000"} data-aos-delay={`${index * 100}`} key={index}>
                                         <List spacing={3} >
                                             {links.map(({ external, to, name }, _index) => (
                                                 <ListItem fontSize={"sm"} fontWeight={"light"} color={"whiteAlpha.500"} key={`${index}-${_index}`}>

@@ -9,6 +9,7 @@ import Home from "./pages/Home"
 import Login from "./pages/Login";
 import Registration from "./pages/Registration";
 import Error404 from "./pages/Error404";
+import ScrollTop from "./components/ScrollTop";
 
 
 
@@ -26,13 +27,15 @@ const App = () => {
     }, [])
 
     return (
-        <HelmetProvider>
-            <BrowserRouter>
-                <Routes>
-                    {routes.map(({ path, component }, index) => <Route path={path} key={`${path}-${index}`} element={component} />)}
-                </Routes>
-            </BrowserRouter>
-        </HelmetProvider>
+        <ScrollTop>
+            <HelmetProvider>
+                <BrowserRouter>
+                    <Routes>
+                        {routes.map(({ path, component }, index) => <Route path={path} key={`${path}-${index}`} element={component} />)}
+                    </Routes>
+                </BrowserRouter>
+            </HelmetProvider>
+        </ScrollTop>
     )
 }
 

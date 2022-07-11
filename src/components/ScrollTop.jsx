@@ -1,12 +1,18 @@
 import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+
 
 const ScrollTop = ({ children }) => {
-
+    const location = useLocation()
+    
+    const handleScrollTop = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+    }
     useEffect(() => {
-        window.scrollTo({ top: 0, left: 0,  behavior: 'smooth' })
-    }, [])
+        handleScrollTop()
+    }, [location])
 
-    return  children
+    return children
 }
 
 export default ScrollTop

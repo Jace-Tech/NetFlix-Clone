@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { HelmetProvider } from "react-helmet-async"
-import { HashRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom"
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -27,15 +27,15 @@ const App = () => {
     }, [])
 
     return (
-        <ScrollTop>
-            <HelmetProvider>
-                <HashRouter basename={"/"}>
+        <HelmetProvider>
+            <BrowserRouter basename={"/"}>
+                <ScrollTop>
                     <Routes>
                         {routes.map(({ path, component }, index) => <Route path={path} key={`${path}-${index}`} element={component} />)}
                     </Routes>
-                </HashRouter>
-            </HelmetProvider>
-        </ScrollTop>
+                </ScrollTop>
+            </BrowserRouter>
+        </HelmetProvider>
     )
 }
 

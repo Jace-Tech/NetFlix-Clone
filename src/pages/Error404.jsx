@@ -15,8 +15,8 @@ const Error404 = () => {
             <Header noSignIn={true} />
             <Box color={"whiteAlpha.900"}>
                 <Container maxW={"container.lg"} w={"95%"}>
-                    <Flex flexWrap={"wrap"} alignItems={"center"} flexDir={{ base: "column", sm: "column", md: "row", lg: "row" }} pb={{base: 20, md: 20}} justifyContent={{ base: "center", md: "center", lg: "space-between"}}>
-                        <Box w={{base: "100%", sm: "90%", md: "70%", lg: "45%"}} textAlign={{base: "center", md: "center", lg: "left"}} mt={"10"} >
+                    <Flex flexWrap={"wrap"} alignItems={"center"} flexDir={{ base: "column", sm: "column", md: "row", lg: "row" }} pb={{ base: 20, md: 20 }} justifyContent={{ base: "center", md: "center", lg: "space-between" }}>
+                        <Box w={{ base: "100%", sm: "90%", md: "70%", lg: "45%" }} textAlign={{ base: "center", md: "center", lg: "left" }} mt={"10"} >
                             <div data-aos={"slide-right"} data-aos-duration={"1500"} data-aos-delay={"0"}>
                                 <Heading fontSize={"6xl"} fontWeight={600}>Something went wrong</Heading>
                             </div>
@@ -26,7 +26,7 @@ const Error404 = () => {
                             </div>
 
                             <div data-aos={"slide-right"} data-aos-duration={"1500"} data-aos-delay={"100"}>
-                                <CustomButton handleClick={() => navigate('/')} style={{ mt: 4, border: "1px solid white", py: 3, px: 10, bgColor: "transparent",  }}>
+                                <CustomButton handleClick={() => navigate('/')} style={{ mt: 4, border: "1px solid white", py: 3, px: 10, bgColor: "transparent", }}>
                                     Go Home
                                 </CustomButton>
                             </div>

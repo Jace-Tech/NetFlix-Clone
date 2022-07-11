@@ -6,7 +6,7 @@ You can follow up the demo on [https://jace-tech-netflix-clone.netlify.app/](htt
 
 ## Pages done so far
 - [Home Page](https://jace-tech-netflix-clone.netlify.app/)
-- [Login Page](https://jace-tech-netflix-clone.netlify.app/login)
-- [Error Page](https://jace-tech-netflix-clone.netlify.app/ksdkdkdcnsdcsdcdjcsdkcbkdbcskh)
+- [Login Page](https://jace-tech-netflix-clone.netlify.app/)
+- [Error Page](https://jace-tech-netflix-clone.netlify.app/)
 
 Currently working on the `regitration` page now 

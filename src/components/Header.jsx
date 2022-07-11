@@ -12,7 +12,7 @@ const Header = ({ type, noSignIn, style }) => {
             <Container w={"95%"} maxW={"container.xl"}>
                 <Flex alignItems={"center"} >
                     <Link as={ReactLink} to={'/'}>
-                        <Image src={logo} w={134} />
+                        <Image objectFit={"contain"} src={logo} w={{base: "100px", sm: "120px", md: "127px", lg: "134px"}} />
                     </Link>
 
                     <Spacer />

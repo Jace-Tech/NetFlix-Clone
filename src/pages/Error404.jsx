@@ -33,7 +33,7 @@ const Error404 = () => {
                         </Box>
 
                         <Flex w={{ base: "100%", md: "500px" }} pos={"relative"} alignItems={"center"} justifyContent={"center"}>
-                            <Image src={image404} className={"bounce"} w={"35rem"} transform={"translateY(-100px)"} />
+                            <Image position={"relative"} top={{ base: 0, sm: 0, md: 0, lg: "-80px" }} src={image404} className={"bounce"} w={"35rem"} transform={"translateY(-100px)"} />
                         </Flex>
                     </Flex>
                 </Container>

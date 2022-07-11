@@ -1,11 +1,13 @@
 import { Box, Flex, HStack, Input, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
+import {  useNavigate} from "react-router-dom"
 import { IoChevronForward } from 'react-icons/io5'
 import CustomButton from './CustomButton'
 
 const MemberShip = () => {
     const [email, setEmail] = useState("")
     const [error, setError] = useState("")
+    const navigate = useNavigate()
 
     const handleBlur = () => {
         if(!email) {
@@ -36,7 +38,7 @@ const MemberShip = () => {
 
                 />
 
-                <CustomButton hover style={{ py: { base: 2, md: 3 }, px: { base: 4, md: 5 }, letterSpacing: "wide", fontSize: "2xl", borderLeftRadius: "none" }}>
+                <CustomButton handleClick={() => navigate("/registration")} hover style={{ py: { base: 2, md: 3 }, px: { base: 4, md: 5 }, letterSpacing: "wide", fontSize: "2xl", borderLeftRadius: "none" }}>
                     <HStack alignItems={"center"}>
                         <Text>Get&nbsp;Started</Text>
                         <IoChevronForward />

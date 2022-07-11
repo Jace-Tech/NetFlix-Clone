@@ -8,3 +8,5 @@ You can follow up the demo on [https://jace-tech-netflix-clone.netlify.app/](htt
 - [Home Page](https://jace-tech-netflix-clone.netlify.app/)
 - [Login Page](https://jace-tech-netflix-clone.netlify.app/login)
 - [Error Page](https://jace-tech-netflix-clone.netlify.app/ksdkdkdcnsdcsdcdjcsdkcbkdbcskh)
+
+Currently working on the `regitration` page now 

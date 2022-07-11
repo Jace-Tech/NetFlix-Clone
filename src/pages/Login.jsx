@@ -3,7 +3,7 @@ import React from 'react'
 import bg from "../assets/bg.jpg"
 import Header from '../components/Header'
 import Seo from '../components/Seo'
-import Footer from "../containers/home/Footer"
+import Footer from "../components/Footer"
 import LoginForm from '../containers/login/LoginForm'
 
 

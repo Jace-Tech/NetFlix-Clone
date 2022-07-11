@@ -4,9 +4,9 @@ import { useLocation } from 'react-router-dom'
 
 const ScrollTop = ({ children }) => {
     const location = useLocation()
-    
+
     const handleScrollTop = () => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+        window.scrollTo(0, 0)
     }
     useEffect(() => {
         handleScrollTop()

@@ -7,6 +7,8 @@ import "aos/dist/aos.css";
 
 import Home from "./pages/Home"
 import Login from "./pages/Login";
+import Registration from "./pages/Registration";
+import Error404 from "./pages/Error404";
 
 
 
@@ -14,6 +16,8 @@ const App = () => {
     const routes = [
         { path: '/', component: <Home /> },
         { path: '/login', component: <Login /> },
+        { path: '/registration', component: <Registration /> },
+        { path: '/*', component: <Error404 /> },
     ]
 
     useEffect(() => {

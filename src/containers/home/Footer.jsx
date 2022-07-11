@@ -33,25 +33,21 @@ const Footer = ({ style, halfLink }) => {
     return (
         <Box py={{ base: 20, sm: 16, lg: 12 }} bgColor={"black"} {...style}>
             <Container maxW={"container.xl"} w={"95%"}>
-                <div data-aos={"fade-up"}>
-                    <Link fontSize={"md"} color={"whiteAlpha.500"}>Questions? Contact us.</Link>
-                </div>
+                <Link fontSize={"md"} color={"whiteAlpha.500"}>Questions? Contact us.</Link>
 
                 {
                     halfLink ? (
                         <SimpleGrid columns={[1, 2, 3, 4]} spacing={8} mt={5}>
                             {
                                 footerLinks && footerLinks.map((links, index) => (
-                                    <div data-aos={"fade-up"} data-aos-duration={"1000"} data-aos-delay={`${index * 100}`} key={index}>
-                                        <List spacing={3} >
-                                            {links.slice(0, 2).map(({ external, to, name }, _index) => (
-                                                <ListItem fontSize={"sm"} fontWeight={"light"} color={"whiteAlpha.500"} key={`${index}-${_index}`}>
-                                                    {console.table({ index, _index, to })}
-                                                    <Link as={external ? "a" : ReactLink} href={external && to} to={!external && to}>{name}</Link>
-                                                </ListItem>
-                                            ))}
-                                        </List>
-                                    </div>
+                                    <List spacing={3} >
+                                        {links.slice(0, 2).map(({ external, to, name }, _index) => (
+                                            <ListItem fontSize={"sm"} fontWeight={"light"} color={"whiteAlpha.500"} key={`${index}-${_index}`}>
+                                                {console.table({ index, _index, to })}
+                                                <Link as={external ? "a" : ReactLink} href={external && to} to={!external && to}>{name}</Link>
+                                            </ListItem>
+                                        ))}
+                                    </List>
                                 ))
                             }
                         </SimpleGrid>
@@ -59,16 +55,14 @@ const Footer = ({ style, halfLink }) => {
                         <SimpleGrid columns={[1, 2, 3, 4]} spacing={8} mt={5}>
                             {
                                 footerLinks && footerLinks.map((links, index) => (
-                                    <div data-aos={"fade-up"} data-aos-duration={"1000"} data-aos-delay={`${index * 100}`} key={index}>
-                                        <List spacing={3} >
-                                            {links.map(({ external, to, name }, _index) => (
-                                                <ListItem fontSize={"sm"} fontWeight={"light"} color={"whiteAlpha.500"} key={`${index}-${_index}`}>
-                                                    {console.table({ index, _index, to })}
-                                                    <Link as={external ? "a" : ReactLink} href={external && to} to={!external && to}>{name}</Link>
-                                                </ListItem>
-                                            ))}
-                                        </List>
-                                    </div>
+                                    <List spacing={3} >
+                                        {links.map(({ external, to, name }, _index) => (
+                                            <ListItem fontSize={"sm"} fontWeight={"light"} color={"whiteAlpha.500"} key={`${index}-${_index}`}>
+                                                {console.table({ index, _index, to })}
+                                                <Link as={external ? "a" : ReactLink} href={external && to} to={!external && to}>{name}</Link>
+                                            </ListItem>
+                                        ))}
+                                    </List>
                                 ))
                             }
                         </SimpleGrid>

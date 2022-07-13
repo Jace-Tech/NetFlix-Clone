@@ -12,7 +12,6 @@ const Footer = ({ style, halfLink }) => {
     const handleFetchIpAddress = async () => {
         const response = await fetch('https://api.ipify.org?format=json')
         const data = await response.json()
-        console.log({ data })
         handleFetchIpData(data.ip)
     }
 
@@ -21,7 +20,6 @@ const Footer = ({ style, halfLink }) => {
         // const response = await fetch(`https://ipapi.co/json/`)
         const response = await fetch(`http://ip-api.com/json/${address}`)
         const data = await response.json()
-        console.log({ data })
         setCountry(data.country)
     }
 
@@ -40,11 +38,10 @@ const Footer = ({ style, halfLink }) => {
                         <SimpleGrid columns={[1, 2, 3, 4]} spacing={8} mt={5}>
                             {
                                 footerLinks && footerLinks.map((links, index) => (
-                                    <List spacing={3} >
+                                    <List spacing={3} key={index}>
                                         {links.slice(0, 2).map(({ external, to, name }, _index) => (
                                             <ListItem fontSize={"sm"} fontWeight={"light"} key={`${index}-${_index}`}>
-                                                {console.table({ index, _index, to })}
-                                                <Link as={external ? "a" : ReactLink} href={external && to} to={!external && to}>{name}</Link>
+                                                <Link as={external ? "a" : ReactLink} href={external ? to : ""} to={!external ? to : ""}>{name}</Link>
                                             </ListItem>
                                         ))}
                                     </List>
@@ -55,11 +52,10 @@ const Footer = ({ style, halfLink }) => {
                         <SimpleGrid columns={[1, 2, 3, 4]} spacing={8} mt={5}>
                             {
                                 footerLinks && footerLinks.map((links, index) => (
-                                    <List spacing={3} >
+                                    <List spacing={3} key={index}>
                                         {links.map(({ external, to, name }, _index) => (
                                             <ListItem fontSize={"sm"} fontWeight={"light"} key={`${index}-${_index}`}>
-                                                {console.table({ index, _index, to })}
-                                                <Link as={external ? "a" : ReactLink} href={external && to} to={!external && to}>{name}</Link>
+                                                <Link as={external ? "a" : ReactLink} href={external ? to : ""} to={!external ? to : ""}>{name}</Link>
                                             </ListItem>
                                         ))}
                                     </List>
